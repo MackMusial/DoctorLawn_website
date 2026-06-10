@@ -1,8 +1,16 @@
-// Mobile nav toggle
+// ── Mobile nav toggle ────────────────────────────────────
 const toggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
+
 if (toggle && navLinks) {
   toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+  // Close menu when any nav link is clicked (essential for single-page)
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+
+  // Close when clicking outside
   document.addEventListener('click', e => {
     if (!toggle.contains(e.target) && !navLinks.contains(e.target)) {
       navLinks.classList.remove('open');
@@ -10,22 +18,31 @@ if (toggle && navLinks) {
   });
 }
 
-// Mark active nav link based on current page
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-document.querySelectorAll('.nav-links a').forEach(link => {
-  const href = link.getAttribute('href');
-  if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-    link.classList.add('active');
-  }
+// ── Scroll-spy: highlight active nav link ────────────────
+const sections = document.querySelectorAll('section[id]');
+const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navAnchors.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
+      });
+    }
+  });
+}, {
+  rootMargin: '-25% 0px -65% 0px'
 });
 
-// Form submission feedback (contact form + eval form)
-document.querySelectorAll('.contact-form, .eval-form').forEach(form => {
+sections.forEach(s => observer.observe(s));
+
+// ── Form submission feedback ─────────────────────────────
+document.querySelectorAll('.eval-form, .contact-form').forEach(form => {
   form.addEventListener('submit', e => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
     const original = btn.textContent;
-    btn.textContent = 'Submitted! We\'ll be in touch.';
+    btn.textContent = "Submitted! We'll be in touch soon.";
     btn.style.background = '#4d8a14';
     btn.disabled = true;
     setTimeout(() => {
