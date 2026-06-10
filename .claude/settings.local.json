@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git *)"
+      "Bash(git *)",
+      "Bash(mkdir -p /home/mackm/drlawnprojects/website/images)",
+      "Bash(touch /home/mackm/drlawnprojects/website/images/.gitkeep)"
     ]
   }
 }

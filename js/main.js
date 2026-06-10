@@ -19,20 +19,20 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   }
 });
 
-// Contact form submission feedback
-const form = document.querySelector('.contact-form');
-if (form) {
+// Form submission feedback (contact form + eval form)
+document.querySelectorAll('.contact-form, .eval-form').forEach(form => {
   form.addEventListener('submit', e => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Message Sent!';
-    btn.style.background = '#2d5a27';
+    const original = btn.textContent;
+    btn.textContent = 'Submitted! We\'ll be in touch.';
+    btn.style.background = '#4d8a14';
     btn.disabled = true;
     setTimeout(() => {
-      btn.textContent = 'Send Message';
+      btn.textContent = original;
       btn.style.background = '';
       btn.disabled = false;
       form.reset();
-    }, 3000);
+    }, 4000);
   });
-}
+});

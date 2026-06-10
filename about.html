@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About – Dr. Lawn</title>
+  <title>About – DoctorLawn</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -12,14 +12,18 @@
   <nav class="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <span>Dr.</span> Lawn
+        <img src="images/doctor-mascot.png" alt="Doctor Lawn" class="logo-mascot" onerror="this.style.display='none'">
+        <div class="logo-text">Doctor<span class="logo-accent">Lawn</span></div>
       </a>
+      <div class="nav-phone"><a href="tel:+13134874949">313-487-4949</a></div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -31,8 +35,8 @@
   <section class="page-hero">
     <div class="container">
       <div class="breadcrumb"><a href="index.html">Home</a> / About</div>
-      <h1>About Dr. Lawn</h1>
-      <p>A family-owned business built on hard work, honest service, and a genuine love of green grass.</p>
+      <h1>About <span>DoctorLawn</span></h1>
+      <p>A family-owned business built on hard work, honest service, and a genuine love of great-looking grass.</p>
     </div>
   </section>
 
@@ -42,10 +46,10 @@
       <div class="about-grid">
         <div class="about-image-wrap">🌿</div>
         <div class="about-text">
-          <h2>Our Story</h2>
-          <p>Dr. Lawn was born from a simple belief — every homeowner deserves a lawn they're proud of, without being overcharged or oversold on things they don't need.</p>
-          <p>What started as a one-truck operation serving neighbors in the community has grown into a trusted name in local lawn care. Over the years, we've built our reputation one satisfied customer at a time.</p>
-          <p>We're not a franchise. We're not a call center. When you contact Dr. Lawn, you're talking to the person who will actually show up at your door.</p>
+          <h2>Our <span>Story</span></h2>
+          <p>DoctorLawn was born from a simple belief — every homeowner deserves a lawn they're proud of, without being overcharged or oversold on things they don't need.</p>
+          <p>What started as a one-truck operation serving neighbors in Southeast Michigan has grown into a trusted name in local lawn care. We've built our reputation one satisfied customer at a time across Wayne, Monroe, and Oakland counties.</p>
+          <p>We're not a franchise. We're not a call center. When you contact DoctorLawn, you're talking to the person who will actually show up at your door.</p>
           <div class="about-values">
             <div class="about-value">
               <span class="v-icon">🤝</span>
@@ -57,7 +61,7 @@
             <div class="about-value">
               <span class="v-icon">🌱</span>
               <div>
-                <strong>Proven Products</strong>
+                <strong>Premium Products</strong>
                 <span>We only use fertilizers and treatments we trust from reputable suppliers.</span>
               </div>
             </div>
@@ -74,27 +78,32 @@
     </div>
   </section>
 
-  <!-- OWNER -->
-  <section>
+  <!-- MEET THE OWNER -->
+  <section class="owner-section">
     <div class="container">
-      <h2 class="section-title">Meet the Owner</h2>
-      <p class="section-subtitle">The face behind every job we do.</p>
-      <div class="owner-card">
-        <div class="owner-avatar">👨</div>
-        <div class="owner-info">
-          <h3>Owner & Operator</h3>
-          <div class="title">Founder, Dr. Lawn</div>
-          <p>I started Dr. Lawn because I wanted to do things right — quality products, real knowledge, and a commitment to showing up and following through. I've built this business from the ground up on honest service and results you can see. This is my business and my reputation on the line with every single job.</p>
+      <div class="owner-grid">
+        <div class="owner-text-side">
+          <h2>Meet the Owner — <span>Jeff Musial</span></h2>
+          <div class="owner-title">Owner &amp; Operator · Founder, DoctorLawn</div>
+          <p class="owner-quote">
+            "I founded Doctor Lawn because I wanted to give homeowners personalized lawn care solutions that deliver healthy, beautiful lawns. Every property receives professional attention and customized treatment recommendations. This is my business and my reputation on the line with every single job."
+          </p>
+          <div class="owner-sig">Jeff Musial</div>
+          <br>
+          <a href="contact.html" class="btn btn-green">Get in Touch with Jeff</a>
+        </div>
+        <div class="owner-image-side">
+          <img src="images/doctor-mascot.png" alt="DoctorLawn Mascot" onerror="this.style.display='none'">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- VALUES / STATS -->
-  <section>
+  <!-- BY THE NUMBERS -->
+  <section class="bg-gray">
     <div class="container">
-      <h2 class="section-title">By the Numbers</h2>
-      <p class="section-subtitle">Results earned over years of hard work in the field.</p>
+      <h2 class="section-title">By the <span class="accent">Numbers</span></h2>
+      <p class="section-subtitle">Results earned over years of hard work in the field across Southeast Michigan.</p>
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon">✅</div>
@@ -103,18 +112,18 @@
         </div>
         <div class="feature-card">
           <div class="feature-icon">🏡</div>
-          <h3>500+ Lawns</h3>
-          <p>Hundreds of satisfied homeowners and commercial clients across the area.</p>
+          <h3>500+ Lawns Served</h3>
+          <p>Hundreds of satisfied homeowners across Wayne, Monroe, and Oakland counties.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">⭐</div>
-          <h3>Top Rated</h3>
-          <p>Consistently high reviews from real customers who keep coming back season after season.</p>
+          <h3>5-Star Rated</h3>
+          <p>Consistently top reviews from real customers who keep coming back season after season.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">💚</div>
-          <h3>Family Owned</h3>
-          <p>No corporate chains, no franchise fees. Just a local family business that cares about its work.</p>
+          <div class="feature-icon">🛡️</div>
+          <h3>Licensed &amp; Insured</h3>
+          <p>State licensed applicator fully insured for your protection on every single job.</p>
         </div>
       </div>
     </div>
@@ -123,18 +132,24 @@
   <!-- CTA -->
   <section class="cta-banner">
     <div class="container">
-      <h2>Let's Work Together</h2>
-      <p>Whether you need a one-time treatment or a full seasonal program, we'd love to help.</p>
-      <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+      <h2>Let's Work <span>Together</span></h2>
+      <p>Whether you need a one-time treatment or a full seasonal program, we'd love to help your lawn reach its potential.</p>
+      <a href="contact.html" class="btn btn-green">Get a Free Evaluation</a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-inner">
+    <div class="footer-inner container">
       <div class="footer-brand">
-        <div class="logo-text"><span>Dr.</span> Lawn</div>
-        <p>Professional fertilizing and lawn nutrition services. Family-owned, locally operated, and dedicated to making your lawn the best on the block.</p>
+        <div class="logo-text">Doctor<span class="logo-accent">Lawn</span></div>
+        <p>Professional Fertilization and Lawn Restoration. Proudly serving Southeast Michigan — Wayne, Monroe, and Oakland counties.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="TikTok">TT</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+        </div>
       </div>
       <div class="footer-col">
         <h4>Pages</h4>
@@ -143,21 +158,37 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li><a href="contact.html">Get a Quote</a></li>
-          <li><a href="tel:+13134874949">(313) 487-4949</a></li>
-          <li><a href="mailto:info@drlawn.com">info@drlawn.com</a></li>
+          <li><a href="tel:+13134874949">313-487-4949</a></li>
+          <li><a href="mailto:jeff@doclawn.com">jeff@doclawn.com</a></li>
+          <li><a href="contact.html">Get a Free Quote</a></li>
         </ul>
+        <br>
+        <h4>Service Area</h4>
+        <ul>
+          <li><a href="#">Wayne County</a></li>
+          <li><a href="#">Monroe County</a></li>
+          <li><a href="#">Oakland County</a></li>
+          <li><a href="#">Southeast Michigan</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <div class="hours-row"><span>Mon – Fri</span><span>8am – 6pm</span></div>
+        <div class="hours-row"><span>Saturday</span><span>By Appt.</span></div>
+        <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Dr. Lawn. All rights reserved.</span>
-      <span>Professional Fertilizing Services</span>
+      <span>&copy; 2026 DoctorLawn. All rights reserved.</span>
+      <span>Professional Fertilization &amp; Lawn Restoration — Southeast Michigan</span>
     </div>
   </footer>
 

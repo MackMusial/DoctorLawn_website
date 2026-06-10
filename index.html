@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Lawn – Professional Fertilizing Services</title>
+  <title>DoctorLawn – The Lawn Experts Your Neighbors Trust</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -12,14 +12,18 @@
   <nav class="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <span>Dr.</span> Lawn
+        <img src="images/doctor-mascot.png" alt="Doctor Lawn" class="logo-mascot" onerror="this.style.display='none'">
+        <div class="logo-text">Doctor<span class="logo-accent">Lawn</span></div>
       </a>
+      <div class="nav-phone"><a href="tel:+13134874949">313-487-4949</a></div>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -30,121 +34,268 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <div class="hero-badge">Professional Lawn Fertilizing</div>
-      <h1>Give Your Lawn the<br>Care It Deserves</h1>
-      <p>Trusted fertilizing and lawn nutrition services that keep your grass green, healthy, and thriving all season long.</p>
-      <div class="hero-actions">
-        <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
-        <a href="services.html" class="btn btn-outline">Our Services</a>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat"><strong>500+</strong><span>Lawns Served</span></div>
-        <div class="hero-stat"><strong>5★</strong><span>Rated Service</span></div>
-        <div class="hero-stat"><strong>100%</strong><span>Satisfaction</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY CHOOSE US -->
-  <section>
-    <div class="container">
-      <h2 class="section-title">Why Choose Dr. Lawn?</h2>
-      <p class="section-subtitle">We take the guesswork out of lawn care so you can enjoy a beautiful yard without the hassle.</p>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🌱</div>
-          <h3>Custom Fertilizing Plans</h3>
-          <p>Every lawn is different. We analyze your soil and grass type to build a plan that actually works.</p>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-badge">Southeast Michigan</div>
+          <h1>The Lawn Experts<br><span>Your Neighbors Trust</span></h1>
+          <p class="hero-sub">Professional Fertilization, Weed Control, and Lawn Restoration Services Throughout Southeast Michigan.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-green">Get a Free Lawn Evaluation</a>
+            <a href="services.html" class="btn btn-outline-white">Our Services</a>
+          </div>
+          <div class="hero-phone"><a href="tel:+13134874949">313-487-4949</a></div>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">🔬</div>
-          <h3>Soil Testing</h3>
-          <p>Know exactly what your lawn needs. Our soil analysis pinpoints deficiencies before they become problems.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📅</div>
-          <h3>Seasonal Programs</h3>
-          <p>Spring green-up, summer heat protection, fall prep — we keep your lawn strong year-round.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🤝</div>
-          <h3>Local & Reliable</h3>
-          <p>Family-owned and operated. We show up on time, do the job right, and stand behind our work.</p>
+        <div class="hero-image-side">
+          <img src="images/van.jpg" alt="DoctorLawn Service Van" onerror="this.parentElement.style.display='none'">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES PREVIEW -->
+  <!-- TRUST BADGES -->
+  <div class="trust-strip">
+    <div class="container">
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <div class="badge-icon">🛡️</div>
+          <span>Licensed<br>Applicator</span>
+        </div>
+        <div class="trust-badge">
+          <div class="badge-icon">🏠</div>
+          <span>Locally Owned<br>&amp; Operated</span>
+        </div>
+        <div class="trust-badge">
+          <div class="badge-icon">🌿</div>
+          <span>Customized<br>Lawn Programs</span>
+        </div>
+        <div class="trust-badge">
+          <div class="badge-icon">👶</div>
+          <span>Safe for Kids<br>&amp; Pets</span>
+        </div>
+        <div class="trust-badge">
+          <div class="badge-icon">✅</div>
+          <span>Satisfaction<br>Guaranteed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEET THE OWNER -->
+  <section class="owner-section">
+    <div class="container">
+      <div class="owner-grid">
+        <div class="owner-text-side">
+          <h2>Meet the Owner — <span>Jeff Musial</span></h2>
+          <div class="owner-title">Owner &amp; Operator · Founder, DoctorLawn</div>
+          <p class="owner-quote">
+            "I founded Doctor Lawn because I wanted to give homeowners personalized lawn care solutions that deliver healthy, beautiful lawns. Every property receives professional attention and customized treatment recommendations."
+          </p>
+          <div class="owner-sig">Jeff Musial</div>
+        </div>
+        <div class="owner-image-side">
+          <img src="images/doctor-mascot.png" alt="DoctorLawn Mascot" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="bg-dark">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-mascot">
+          <img src="images/doctor-mascot.png" alt="DoctorLawn Mascot" onerror="this.outerHTML='<div class=\'why-mascot-placeholder\'><div class=\'mascot-icon\'>🩺</div><span>DoctorLawn Mascot<br>(images/doctor-mascot.png)</span></div>'">
+        </div>
+        <div>
+          <h2 class="section-title" style="text-align:left; color:#fff;">Why Choose <span class="accent">DoctorLawn?</span></h2>
+          <div class="why-list">
+            <div class="why-item"><div class="check">✓</div> Licensed &amp; Insured Professional</div>
+            <div class="why-item"><div class="check">✓</div> Years of Experience &amp; Local Expertise</div>
+            <div class="why-item"><div class="check">✓</div> Premium Quality Fertilizers &amp; Products</div>
+            <div class="why-item"><div class="check">✓</div> Weed Control &amp; Grub Prevention</div>
+            <div class="why-item"><div class="check">✓</div> Lawn Restoration &amp; Soil Health</div>
+            <div class="why-item"><div class="check">✓</div> Friendly, Reliable &amp; On-Time Service</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
   <section>
     <div class="container">
-      <h2 class="section-title">Our Services</h2>
-      <p class="section-subtitle">From basic fertilizing to complete lawn nutrition programs — we have you covered.</p>
+      <h2 class="section-title">Our Lawn Care <span class="accent">Services</span></h2>
+      <p class="section-subtitle">Proven treatments tailored to your lawn's specific needs — every season.</p>
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-card-header">
-            <div class="icon">🌿</div>
-            <h3>Lawn Fertilizing</h3>
-          </div>
-          <div class="service-card-body">
-            <p>Nutrient-rich treatments tailored to your grass type and seasonal needs.</p>
-            <ul class="service-list">
-              <li>Granular & liquid applications</li>
-              <li>Slow-release formulas</li>
-              <li>N-P-K balanced programs</li>
-            </ul>
+          <div class="service-thumb">🌿</div>
+          <div class="service-body">
+            <h3>Lawn Fertilization</h3>
+            <p>Nutrient-rich treatments designed for Michigan lawns. Thick, green, healthy grass all season long.</p>
+            <a href="services.html" class="btn btn-green">Learn More</a>
           </div>
         </div>
         <div class="service-card">
-          <div class="service-card-header">
-            <div class="icon">🧪</div>
-            <h3>Soil Testing</h3>
-          </div>
-          <div class="service-card-body">
-            <p>Understand your lawn's foundation with detailed soil analysis and recommendations.</p>
-            <ul class="service-list">
-              <li>pH level testing</li>
-              <li>Nutrient deficiency report</li>
-              <li>Custom correction plan</li>
-            </ul>
+          <div class="service-thumb">🌾</div>
+          <div class="service-body">
+            <h3>Weed Control</h3>
+            <p>Target dandelions, damaged, or unwanted crabgrass. Pre- and post-emergent programs that work.</p>
+            <a href="services.html" class="btn btn-green">Learn More</a>
           </div>
         </div>
         <div class="service-card">
-          <div class="service-card-header">
-            <div class="icon">🗓️</div>
-            <h3>Seasonal Programs</h3>
+          <div class="service-thumb">🏡</div>
+          <div class="service-body">
+            <h3>Lawn Restoration</h3>
+            <p>Improve thin, damaged, or stressed lawns. We bring struggling yards back to life.</p>
+            <a href="services.html" class="btn btn-green">Learn More</a>
           </div>
-          <div class="service-card-body">
-            <p>Multi-application programs that follow your lawn through every season.</p>
-            <ul class="service-list">
-              <li>Spring, summer & fall rounds</li>
-              <li>Pre-emergent weed control</li>
-              <li>Winterizer applications</li>
-            </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-thumb">🧪</div>
+          <div class="service-body">
+            <h3>Soil Health Programs</h3>
+            <p>Customized treatment plans for long-term soil health and sustainable lawn success.</p>
+            <a href="services.html" class="btn btn-green">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS PREVIEW -->
+  <section class="bg-gray">
+    <div class="container">
+      <h2 class="section-title">What Our <span class="accent">Clients Say</span></h2>
+      <p class="section-subtitle">Real homeowners. Real results.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The grass has never been so green in ten years! I cannot believe the difference after just one season with DoctorLawn."</p>
+          <div class="testimonial-author">— Allen Fox</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Professional, knowledgeable, and reliable. They show up when they say they will and the results speak for themselves. Highly recommend!"</p>
+          <div class="testimonial-author">— Dan Diaz</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Great communication and amazing results. Doctor Lawn is the best in the area! My neighbors keep asking what my secret is."</p>
+          <div class="testimonial-author">— Ike Fountain</div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="testimonials.html" class="btn btn-outline-green">Read More Reviews</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO PREVIEW -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">See Our <span class="accent">Work in Action</span></h2>
+      <p class="section-subtitle">Watch lawn transformations and tips from the DoctorLawn team.</p>
+      <div class="video-grid">
+        <div class="video-thumb">
+          <div class="video-placeholder">
+            <div class="play-btn">▶</div>
+            <span>Lawn Transformation<br>Step by Step</span>
+          </div>
+        </div>
+        <div class="video-thumb">
+          <div class="video-placeholder">
+            <div class="play-btn">▶</div>
+            <span>Fertilization Process<br>How We Do It</span>
+          </div>
+        </div>
+        <div class="video-thumb">
+          <div class="video-placeholder">
+            <div class="play-btn">▶</div>
+            <span>Spring Lawn Care Tips<br>From Jeff</span>
           </div>
         </div>
       </div>
       <div style="text-align:center; margin-top:2.5rem;">
-        <a href="services.html" class="btn btn-primary">View All Services</a>
+        <a href="videos.html" class="btn btn-outline-green">View All Videos</a>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta-banner">
+  <!-- FREE EVALUATION FORM -->
+  <section class="eval-section">
     <div class="container">
-      <h2>Ready for a Greener Lawn?</h2>
-      <p>Get in touch today for a free estimate. No contracts, no pressure — just great results.</p>
-      <a href="contact.html" class="btn btn-outline">Get Your Free Quote</a>
+      <div class="eval-inner">
+        <div class="eval-text">
+          <h2>Get Your <span>Free Lawn Evaluation</span></h2>
+          <p>Fill out the form and we'll come take a look at your property — no cost, no obligation, no pressure. Just honest advice and a plan that fits your lawn.</p>
+          <div class="phone-big"><a href="tel:+13134874949">313-487-4949</a></div>
+        </div>
+        <form class="eval-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ef-name">Full Name</label>
+              <input type="text" id="ef-name" name="name" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="ef-email">Email Address</label>
+              <input type="email" id="ef-email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ef-phone">Phone Number</label>
+              <input type="tel" id="ef-phone" name="phone" placeholder="(555) 000-0000" />
+            </div>
+            <div class="form-group">
+              <label for="ef-address">Property Address</label>
+              <input type="text" id="ef-address" name="address" placeholder="123 Main St, City, MI" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ef-size">Approximate Lawn Size</label>
+              <select id="ef-size" name="size">
+                <option value="">Select size…</option>
+                <option>Under 5,000 sq ft</option>
+                <option>5,000 – 10,000 sq ft</option>
+                <option>10,000 – 20,000 sq ft</option>
+                <option>Over 20,000 sq ft</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ef-source">How Did You Hear About Us?</label>
+              <select id="ef-source" name="source">
+                <option value="">Select…</option>
+                <option>Google Search</option>
+                <option>Facebook</option>
+                <option>Instagram</option>
+                <option>TikTok</option>
+                <option>YouTube</option>
+                <option>Neighbor / Word of Mouth</option>
+                <option>Yard Sign</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-green" style="align-self:flex-start; margin-top:0.5rem;">Get My Free Evaluation</button>
+        </form>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-inner">
+    <div class="footer-inner container">
       <div class="footer-brand">
-        <div class="logo-text"><span>Dr.</span> Lawn</div>
-        <p>Professional fertilizing and lawn nutrition services. Family-owned, locally operated, and dedicated to making your lawn the best on the block.</p>
+        <div class="logo-text">Doctor<span class="logo-accent">Lawn</span></div>
+        <p>Professional Fertilization and Lawn Restoration. Proudly serving Southeast Michigan — Wayne, Monroe, and Oakland counties.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="TikTok">TT</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+        </div>
       </div>
       <div class="footer-col">
         <h4>Pages</h4>
@@ -153,21 +304,37 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li><a href="contact.html">Get a Quote</a></li>
-          <li><a href="tel:+13134874949">(313) 487-4949</a></li>
-          <li><a href="mailto:info@drlawn.com">info@drlawn.com</a></li>
+          <li><a href="tel:+13134874949">313-487-4949</a></li>
+          <li><a href="mailto:jeff@doclawn.com">jeff@doclawn.com</a></li>
+          <li><a href="contact.html">Get a Free Quote</a></li>
         </ul>
+        <br>
+        <h4>Service Area</h4>
+        <ul>
+          <li><a href="#">Wayne County</a></li>
+          <li><a href="#">Monroe County</a></li>
+          <li><a href="#">Oakland County</a></li>
+          <li><a href="#">Southeast Michigan</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <div class="hours-row"><span>Mon – Fri</span><span>8am – 6pm</span></div>
+        <div class="hours-row"><span>Saturday</span><span>By Appt.</span></div>
+        <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Dr. Lawn. All rights reserved.</span>
-      <span>Professional Fertilizing Services</span>
+      <span>&copy; 2026 DoctorLawn. All rights reserved.</span>
+      <span>Professional Fertilization &amp; Lawn Restoration — Southeast Michigan</span>
     </div>
   </footer>
 
