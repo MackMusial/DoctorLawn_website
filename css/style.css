@@ -183,14 +183,24 @@ section[id] { scroll-margin-top: 68px; }
 
 /* ── Hero ─────────────────────────────────────────────── */
 .hero {
-  background: linear-gradient(to right, rgba(10,10,10,0.92) 55%, rgba(10,10,10,0.5) 100%),
-              url('../images/van.jpg') center/cover no-repeat;
-  background-color: var(--dark);
+  position: relative;
+  background:
+    radial-gradient(120% 90% at 75% 10%, rgba(141,198,63,.15), transparent 55%),
+    linear-gradient(180deg, #16240e 0%, #0c140a 60%, var(--dark) 100%);
   color: var(--white);
   padding: 5rem 0;
   min-height: 560px;
   display: flex;
   align-items: center;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(164,224,18,.10) 1px, transparent 1px);
+  background-size: 26px 26px;
+  pointer-events: none;
 }
 .hero-inner {
   display: grid;

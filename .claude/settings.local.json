@@ -6,7 +6,8 @@
       "Bash(touch /home/mackm/drlawnprojects/website/images/.gitkeep)",
       "Bash(convert --version)",
       "Bash(sudo apt-get install -y imagemagick python3-pil)",
-      "Bash(node *)"
+      "Bash(node *)",
+      "Read(//mnt/c/Users/mackm/Downloads/doctorlawn-main/**)"
     ]
   }
 }
