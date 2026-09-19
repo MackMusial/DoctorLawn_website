@@ -399,7 +399,18 @@ section[id] { scroll-margin-top: 68px; }
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .feature-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px var(--shadow); }
-.feature-icon { font-size: 2.4rem; margin-bottom: 1rem; }
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.25rem;
+  border-radius: 50%;
+  background: var(--green);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
 .feature-card h3 { color: var(--text); margin-bottom: 0.5rem; }
 .feature-card p { color: var(--text-mid); font-size: 0.95rem; }
 
