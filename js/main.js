@@ -36,6 +36,17 @@ const observer = new IntersectionObserver(entries => {
 
 sections.forEach(s => observer.observe(s));
 
+// ── Gallery "See more results" toggle ────────────────────
+const galleryGrid = document.getElementById('galleryGrid');
+const galleryToggle = document.getElementById('galleryToggle');
+
+if (galleryGrid && galleryToggle) {
+  galleryToggle.addEventListener('click', () => {
+    const expanded = galleryGrid.classList.toggle('expanded');
+    galleryToggle.textContent = expanded ? 'Show Fewer Results' : 'See More Results';
+  });
+}
+
 // ── Form submission feedback ─────────────────────────────
 document.querySelectorAll('.eval-form, .contact-form').forEach(form => {
   form.addEventListener('submit', e => {

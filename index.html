@@ -239,12 +239,14 @@
     <div class="container">
       <h2 class="section-title">Our <span class="accent">Work</span></h2>
       <p class="section-subtitle">Before &amp; afters, seasonal results, and happy lawns from around Southeast Michigan.</p>
-      <div class="gallery-grid">
+      <div class="gallery-grid" id="galleryGrid">
         <div class="gallery-item gallery-item--photo">
           <img src="images/gallery-1.jpg" alt="Healthy residential lawn — DoctorLawn">
           <div class="gallery-caption">Residential Lawn — Southeast Michigan</div>
         </div>
-        <div class="gallery-item gallery-item--photo">
+        <!-- To add more photos later: copy a .gallery-item--photo block and
+             add the gallery-item--extra class so it stays tucked under "See More Results". -->
+        <div class="gallery-item gallery-item--photo gallery-item--extra">
           <img src="images/gallery-2.jpg" alt="Lush green lawn results — DoctorLawn">
           <div class="gallery-caption">Fertilization Program Results</div>
         </div>
@@ -274,6 +276,9 @@
           <div class="gallery-caption">Summer Stress Recovery</div>
         </div>
         -->
+      </div>
+      <div class="gallery-toggle-wrap">
+        <button type="button" class="btn btn-outline-green" id="galleryToggle">See More Results</button>
       </div>
     </div>
   </section>
